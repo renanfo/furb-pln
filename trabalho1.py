@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import os
 
 url = "https://adalbertoday.blogspot.com/2011/02/encontro-com-onca-pintada-do-spitzkopf.html"
 
@@ -78,7 +79,10 @@ if texto_completo:
 else:
     print("Conteúdo não encontrado")
 
-nome_arquivo = "texto_completo.txt"
+diretorio = "arquivos/trabalho1"
+os.makedirs(diretorio, exist_ok=True)
+
+nome_arquivo = os.path.join(diretorio, "texto_completo.txt")
 try:
     with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
         arquivo.write("TÍTULO: " + (titulo_principal if titulo_principal else "Não encontrado") + "\n\n")
