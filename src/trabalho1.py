@@ -79,7 +79,7 @@ if texto_completo:
 else:
     print("Conteúdo não encontrado")
 
-diretorio = "arquivos/trabalho1"
+diretorio = "database/trabalho1"
 os.makedirs(diretorio, exist_ok=True)
 
 nome_arquivo = os.path.join(diretorio, "texto_completo.txt")

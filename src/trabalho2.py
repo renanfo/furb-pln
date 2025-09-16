@@ -133,7 +133,7 @@ def main():
             print(f"Verificado que a quantidade de posts é maior que o limite, processando apenas os primeiros {MAX_POSTS} posts")
             links_posts = links_posts[:MAX_POSTS]
         
-        diretorio = "arquivos/trabalho2"
+        diretorio = "database/trabalho2"
         os.makedirs(diretorio, exist_ok=True)
         
         total_processados = 0
