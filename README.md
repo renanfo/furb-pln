@@ -1,4 +1,6 @@
-Projeto de PLN
+# Projeto de Processamento de Linguagem Natural (PLN)
 
-Link do trabalho 1
-https://furb-my.sharepoint.com/:w:/g/personal/renanfiedler_furb_br/EfnSc7ttx4NOhuFu1QQ3LRYBzUEbjVLcwHVaQ_Gts8wCdg?e=4lB46c
+## Para rodar o trabalho 2: Rodar na pasta raiz
+```
+python src/trabalho2/main.py
+```
