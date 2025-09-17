@@ -22,7 +22,7 @@ import string
 import re
 
 # Configuração
-MAX_POSTS = 10
+MAX_POSTS = 100
 DATABASE_DIR = "./database/trabalho2"
 
 # Configuração do NLTK
