@@ -1,0 +1,36 @@
+============================================================
+📊 RELATÓRIO COMPARATIVO SIMPLES
+============================================================
+
+📈 RESUMO COMPARATIVO:
+------------------------------------------------------------
+Modelo       Dimensões  Sim.Média  Desvio   Min      Max     
+------------------------------------------------------------
+TF-IDF       72         0.199      0.118    0.000    0.609   
+Word2Vec     300        0.275      0.235    -0.112   0.764   
+BERT         768        0.730      0.076    0.481    0.848   
+
+🔍 INTERPRETAÇÃO:
+------------------------------
+
+TF-IDF:
+  📏 Dimensões: 72
+  📄 Documentos: 20
+  🎯 Similaridade média: 0.1986
+  💡 🟢 Baixa similaridade - Documentos diversos
+
+Word2Vec:
+  📏 Dimensões: 300
+  📄 Documentos: 20
+  🎯 Similaridade média: 0.2745
+  💡 🟢 Baixa similaridade - Documentos diversos
+
+BERT:
+  📏 Dimensões: 768
+  📄 Documentos: 20
+  🎯 Similaridade média: 0.7301
+  💡 🔴 Alta similaridade - Documentos muito parecidos
+
+============================================================
+✅ Análise concluída
+============================================================

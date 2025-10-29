@@ -1,0 +1,35 @@
+============================================================
+RELATÓRIO COMPARATIVO - MODELOS DE REPRESENTAÇÃO TEXTUAL
+============================================================
+
+COMPARAÇÃO GERAL:
+------------------------------------------------------------
+Modelo       Dimensões  Sim.Média  Std      Min      Max     
+------------------------------------------------------------
+TF-IDF       72         0.199      0.118    0.000    0.609   
+Word2Vec     300        0.275      0.235    -0.112   0.764   
+BERT         768        0.730      0.076    0.481    0.848   
+
+ANÁLISE DETALHADA:
+----------------------------------------
+
+TF-IDF:
+  • Dimensionalidade: 72
+  • Documentos processados: 20
+  • Similaridade média: 0.1986
+  • Desvio padrão: 0.1185
+  • Interpretação: Baixa similaridade (mais diversidade)
+
+Word2Vec:
+  • Dimensionalidade: 300
+  • Documentos processados: 20
+  • Similaridade média: 0.2745
+  • Desvio padrão: 0.2347
+  • Interpretação: Baixa similaridade (mais diversidade)
+
+BERT:
+  • Dimensionalidade: 768
+  • Documentos processados: 20
+  • Similaridade média: 0.7301
+  • Desvio padrão: 0.0759
+  • Interpretação: Alta similaridade entre documentos

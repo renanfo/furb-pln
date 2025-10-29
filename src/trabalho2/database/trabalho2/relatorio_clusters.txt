@@ -1,0 +1,90 @@
+================================================================================
+RELATÓRIO DETALHADO DE CLUSTERIZAÇÃO
+================================================================================
+
+TFIDF:
+--------------------------------------------------
+
+Cluster 0 (8 documentos):
+  • Post 4: Dr Hermann Bruno Otto Blumenau
+  • Post 7: Barracao Dos Imigrantes
+  • Post 8: As Casas De Dr Blumenau
+  • Post 10: Dr Blumenau Retorna Alemanha 1866 Para
+  • Post 11: O Cemiterio Onde Dr Blumenau Foi
+  • Post 12: O Empreendedor Dr Blumenau
+  • Post 13: Descoberta De Novas Terras
+  • Post 14: Vida Religiosa No Inicio Da Colonia
+
+Cluster 1 (4 documentos):
+  • Post 1: Blumenau E Sua Historia
+  • Post 6: Como Viveram Os Primeiros Colonos
+  • Post 16: Os 180 Anos Da Chegada Dos Alemaes Em
+  • Post 19: Luz Eletrica Em Blumenau
+
+Cluster 2 (8 documentos):
+  • Post 2: Parabens Blumenau E Sua Gente
+  • Post 3: Blumenau Verdades E Mitos
+  • Post 5: Bela Blumenau
+  • Post 9: Coragem Para Enfrentar O Desconhecido
+  • Post 15: As Duas Roseiras De Dr Blumenau
+  • Post 17: O Conde Deu Em Blumenau
+  • Post 18: Hinos De Blumenau
+  • Post 20: Emancipacao Da Colonia Blumenau
+
+WORD2VEC:
+--------------------------------------------------
+
+Cluster 0 (17 documentos):
+  • Post 1: Blumenau E Sua Historia
+  • Post 4: Dr Hermann Bruno Otto Blumenau
+  • Post 5: Bela Blumenau
+  • Post 6: Como Viveram Os Primeiros Colonos
+  • Post 7: Barracao Dos Imigrantes
+  • Post 8: As Casas De Dr Blumenau
+  • Post 9: Coragem Para Enfrentar O Desconhecido
+  • Post 10: Dr Blumenau Retorna Alemanha 1866 Para
+  • Post 11: O Cemiterio Onde Dr Blumenau Foi
+  • Post 12: O Empreendedor Dr Blumenau
+  • Post 14: Vida Religiosa No Inicio Da Colonia
+  • Post 15: As Duas Roseiras De Dr Blumenau
+  • Post 16: Os 180 Anos Da Chegada Dos Alemaes Em
+  • Post 17: O Conde Deu Em Blumenau
+  • Post 18: Hinos De Blumenau
+  • Post 19: Luz Eletrica Em Blumenau
+  • Post 20: Emancipacao Da Colonia Blumenau
+
+Cluster 1 (1 documentos):
+  • Post 13: Descoberta De Novas Terras
+
+Cluster 2 (2 documentos):
+  • Post 2: Parabens Blumenau E Sua Gente
+  • Post 3: Blumenau Verdades E Mitos
+
+BERT:
+--------------------------------------------------
+
+Cluster 0 (6 documentos):
+  • Post 4: Dr Hermann Bruno Otto Blumenau
+  • Post 7: Barracao Dos Imigrantes
+  • Post 8: As Casas De Dr Blumenau
+  • Post 11: O Cemiterio Onde Dr Blumenau Foi
+  • Post 15: As Duas Roseiras De Dr Blumenau
+  • Post 19: Luz Eletrica Em Blumenau
+
+Cluster 1 (7 documentos):
+  • Post 6: Como Viveram Os Primeiros Colonos
+  • Post 9: Coragem Para Enfrentar O Desconhecido
+  • Post 10: Dr Blumenau Retorna Alemanha 1866 Para
+  • Post 12: O Empreendedor Dr Blumenau
+  • Post 13: Descoberta De Novas Terras
+  • Post 17: O Conde Deu Em Blumenau
+  • Post 20: Emancipacao Da Colonia Blumenau
+
+Cluster 2 (7 documentos):
+  • Post 1: Blumenau E Sua Historia
+  • Post 2: Parabens Blumenau E Sua Gente
+  • Post 3: Blumenau Verdades E Mitos
+  • Post 5: Bela Blumenau
+  • Post 14: Vida Religiosa No Inicio Da Colonia
+  • Post 16: Os 180 Anos Da Chegada Dos Alemaes Em
+  • Post 18: Hinos De Blumenau

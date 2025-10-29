@@ -21,8 +21,11 @@ from nltk.stem import RSLPStemmer, WordNetLemmatizer
 import string
 import re
 
+# Import do comparador de modelos
+from comparador_modelos import ComparadorModelos
+
 # Configuração
-MAX_POSTS = 100
+MAX_POSTS = 2
 DATABASE_DIR = "./database/trabalho2"
 
 # Configuração do NLTK
@@ -522,6 +525,41 @@ def exportar_resultados(resultados: list) -> str:
         print(f"Erro na exportação: {e}")
         return None
 
+def executar_comparacao_modelos(resultados: list):
+    """
+    Executa comparação entre BERT, TF-IDF e Word2Vec usando os dados processados.
+    """
+    if not resultados:
+        print("\nNenhum resultado disponível para comparação")
+        return
+    
+    print("\n" + "="*60)
+    print("INICIANDO ANÁLISE COMPARATIVA DE MODELOS")
+    print("="*60)
+    
+    try:
+        # Inicializar comparador
+        comparador = ComparadorModelos()
+        
+        # Executar comparação
+        resultados_comparacao = comparador.comparar_modelos(resultados)
+        
+        # Gerar e exibir relatório
+        relatorio = comparador.gerar_relatorio_comparativo()
+        print("\n" + relatorio)
+        
+        # Salvar resultados
+        caminho_base = os.path.join(DATABASE_DIR, "analise_modelos")
+        comparador.salvar_resultados(caminho_base)
+        
+        print(f"\n✓ Análise comparativa concluída!")
+        print(f"✓ Relatórios salvos em: {DATABASE_DIR}/")
+        
+    except Exception as e:
+        print(f"\nErro na comparação de modelos: {e}")
+        print("Certifique-se de que as dependências estão instaladas:")
+        print("pip install transformers torch gensim scikit-learn matplotlib seaborn")
+
 def _formatar_metadados(metadados: dict) -> str:
     """Formata metadados."""
     try:
@@ -547,6 +585,18 @@ def main():
     try:
         scraper.processar_lista_posts()
         exportar_resultados(scraper.resultados)
+        
+        # Executar comparação de modelos
+        if scraper.resultados:
+            print("\n" + "="*60)
+            print("INICIANDO ANÁLISE COMPARATIVA DE MODELOS")
+            print("="*60)
+            
+            resposta = input("\nDeseja executar a comparação BERT vs TF-IDF vs Word2Vec? (s/n): ").lower().strip()
+            if resposta in ['s', 'sim', 'y', 'yes']:
+                executar_comparacao_modelos(scraper.resultados)
+            else:
+                print("Análise comparativa pulada.")
         
     except KeyboardInterrupt:
         print("\nProcessamento interrompido pelo usuário")

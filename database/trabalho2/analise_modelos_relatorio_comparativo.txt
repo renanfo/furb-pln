@@ -1,0 +1,59 @@
+============================================================
+RELATÓRIO COMPARATIVO - MODELOS DE REPRESENTAÇÃO TEXTUAL
+============================================================
+
+COMPARAÇÃO GERAL:
+------------------------------------------------------------
+Modelo       Dimensões  Sim.Média  Std      Min      Max     
+------------------------------------------------------------
+TF-IDF       1000       0.000      0.000    0.000    0.000   
+Word2Vec     300        0.997      0.000    0.997    0.997   
+BERT         768        0.800      0.000    0.800    0.800   
+
+ANÁLISE DETALHADA:
+----------------------------------------
+
+TF-IDF:
+  • Dimensionalidade: 1000
+  • Documentos processados: 2
+  • Similaridade média: 0.0000
+  • Desvio padrão: 0.0000
+  • Interpretação: Baixa similaridade (mais diversidade)
+
+Word2Vec:
+  • Dimensionalidade: 300
+  • Documentos processados: 2
+  • Similaridade média: 0.9967
+  • Desvio padrão: 0.0000
+  • Interpretação: Alta similaridade entre documentos
+
+BERT:
+  • Dimensionalidade: 768
+  • Documentos processados: 2
+  • Similaridade média: 0.8001
+  • Desvio padrão: 0.0000
+  • Interpretação: Alta similaridade entre documentos
+
+============================================================
+CARACTERÍSTICAS DOS MODELOS:
+============================================================
+
+TF-IDF:
+  v Rápido e eficiente
+  v Boa para recuperação de informação
+  x Não captura semântica profunda
+  x Complexo, complexidade computacional alta
+
+Word2Vec:
+  v Captura relações semânticas
+  v Representação densa
+  x Não considera contexto global
+  x Requer treinamento específico
+
+BERT:
+  v Contexto bidirecional completo
+  v Modelo mais moderno e avançado
+  v Modelo mais robusto e preciso
+  v Modelo com mais base de treinamento
+  x Computacionalmente caro
+  x Maior tempo de processamento
